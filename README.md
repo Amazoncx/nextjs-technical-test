@@ -54,3 +54,5 @@ Este proyecto es una prueba técnica para evaluar habilidades con **Next.js 14**
 
 1. Implementa toda la funcionalidad solicitada.
 2. Envía tu solución como un pull request.
+
+## GRACIAS POR PARTICIPAR!!
