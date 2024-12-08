@@ -62,3 +62,32 @@ export interface ConfigProps {
     callbackUrl: string;
   };
 }
+
+export interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+};
+
+export type Sortables = 'id'|'name'|'price'|'description'
+export const sortableArray: Sortables[] = ['id', 'name', 'price', 'description'];
+
+export interface ProductSort {
+  column?: Sortables
+  asc?: boolean
+}
+
+export interface TableOptions {
+  page?: number
+  sort?: ProductSort
+  filter?: ProductFilter
+}
+
+export interface ProductFilter {
+  searchString?: string
+  minPrice?: number
+  maxPrice?: number
+}
+
+export type SearchParams = { [key: string]: string | undefined }
